@@ -38,7 +38,7 @@ int main() {
     double *array = new double[size];
     if (read(array, size)) {
         reverse(array, size);
-        for (unsigned int i=0; i<size; ++i) {
+        for (unsigned int i=0; i<size; i++) {
             cout << array[i] << " ";
         }
     }
