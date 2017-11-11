@@ -8,7 +8,7 @@ bool read (double *array, int size) {
     string str;
     getline (cin, str);
     istringstream stream (str);
-    for (unsigned int i=0; i <size; i++) {
+    for (unsigned int i=0; i < size; i++) {
         if (!(stream >> array[i])) {
             cout << "An error has occured while reading input data." <<endl;
             return false;
