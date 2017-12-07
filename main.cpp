@@ -8,7 +8,7 @@ bool read (double *array, int size) {
     string str;
     getline (cin, str);
     istringstream stream (str);
-    for (unsigned int i=0; i < size; i++) {
+    for (int i=0; i < size; i++) {
         if (!(stream >> array[i])) {
             cout << "An error has occured while reading input data." <<endl;
             return false;
@@ -21,7 +21,7 @@ bool read (double *array, int size) {
 }
 
 void reverse (double *array, int size) {
-    for (unsigned int i=0; i < size/2; i++) {
+    for (int i=0; i < size/2; i++) {
         swap (array[i], array[size-i-1]);
     }
 }
@@ -38,7 +38,7 @@ int main() {
     double *array = new double[size];
     if (read(array, size)) {
         reverse(array, size);
-        for (unsigned int i=0; i<size; i++) {
+        for (int i=0; i<size; i++) {
             cout << array[i] << " ";
         }
     }
